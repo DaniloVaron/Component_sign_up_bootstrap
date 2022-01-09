@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Primario */
+
+$primary: hsl(0, 100%, 74%);
+$secondary: hsl(154, 59%, 51%);
+
+// Verde_sombra
+$warning: hsl(154, 59%, 45%);
+
+// Verde_hover
+$Verde_hover: hsl(154, 59%, 60%);
+
+/* Acento */
+
+$info: hsl(248, 32%, 49%);
+
+/* Neutral */
+
+$danger: hsl(249, 10%, 26%);
+$success: hsl(246, 25%, 77%);
+
+// Azul_grisaceo_claro
+$Azul_grisaceo_claro: hsl(246, 25%, 90%);
+
+// Azul_oscuro_hover
+$Azul_oscuro_hover: hsla(249, 10%, 26%, 0.25);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.icono_error,
+.texto_error {
+  display: none;
+}
+
+.entrada.error .icono_error,
+.entrada.error .texto_error {
+  display: block;
+}
+
+.entrada.error input {
+  border: 2px solid $primary;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+
+  background-image: url(../images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+
+  .espacio {
+    width: 50%;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5em;
+  }
+}
+
+.texto {
+  font-size: 0.8em;
+  color: $Azul_grisaceo_claro;
+}
+
+.formulario input {
+  border-radius: 5px;
+  border: 1px solid $success;
+  font-weight: 600;
+}
+
+.formulario input:focus {
+  outline: none;
+  border: 1.5px solid $danger;
+}
+
+.oferta,
+.card {
+  box-shadow: 0px 6px 0px 0px $Azul_oscuro_hover;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+
+.btn {
+  font-size: 0.9em;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px $warning;
+  border: 0;
+}
+
+.btn:hover {
+  background: $Verde_hover;
+}
+
+.terminos {
+  font-size: 0.7em;
+  font-weight: 700;
+}
+
+.icono_error {
+  width: 17px;
+  top: 20%;
+  right: 20px;
+}
+
+/* Texto de error */
+.texto_error {
+  font-size: 0.6em;
+  font-weight: 600;
+}
+
+/* Otro */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

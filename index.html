@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./css/custom.css">
+
+</head>
+
+<body class="bg-primary text-light text-center">
+  <!-- Contenedor -->
+  <section class="container px-5 pt-5 pb-3 m-0 mx-md-5 d-flex flex-column flex-md-row">
+
+    <!-- Información -->
+    <div class="d-flex flex-column text-md-start p-md-5 justify-content-md-center espacio">
+
+      <!-- Titulo -->
+      <h1 class="mb-4 fw-bold">Learn to code by watching others</h1>
+
+      <!-- Texto principal -->
+      <p class="mb-5 texto">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
+
+    <!-- Registro -->
+    <div class="d-flex flex-column px-md-5 pt-md-4 espacio">
+
+      <!-- Oferta -->
+      <div class="bg-info mb-4 py-3 px-5 text-success oferta">
+        <scan class="text-light fw-bold">Try it free 7 days</scan> then $20/mo. thereafter
+      </div>
+
+      <!-- Carta -->
+      <div class="card text-dark p-4 ">
+        <!-- Formulario -->
+        <form action="#" id="form" class="formulario mb-3">
+          <div class="mb-3 position-relative entrada">
+            <input type="text" id="first_name" name="first_name" placeholder="First Name"
+              class="w-100 ps-3 py-2 ps-md-4 ">
+            <img src="./images/icon-error.svg" alt="icon-error" class="position-absolute icono_error">
+            <p class="text-end m-0 mb-1 fst-italic text-primary texto_error">First Name cannot be empty</p>
+          </div>
+
+          <div class="mb-3 position-relative entrada">
+            <input type="text" id="last_name" name="last_name" placeholder="Last Name" class="w-100 ps-3 py-2 ps-md-4">
+            <img src="./images/icon-error.svg" alt="icon-error" class="position-absolute icono_error">
+            <p class="text-end m-0 mb-1 fst-italic text-primary texto_error">Last Name cannot be empty</p>
+          </div>
+
+          <div class="mb-3 position-relative entrada">
+            <input type="email" id="email" name="email" placeholder="Email Address" class="w-100 ps-3 py-2 ps-md-4">
+            <img src="./images/icon-error.svg" alt="icon-error" class="position-absolute icono_error">
+            <p class="text-end m-0 mb-1 fst-italic text-primary texto_error">Looks like this is not an email</p>
+          </div>
+
+          <div class="mb-3 position-relative entrada">
+            <input type="password" id="password" name="password" placeholder="Password" class="w-100 ps-3 py-2 ps-md-4">
+            <img src="./images/icon-error.svg" alt="icon-error" class="position-absolute icono_error">
+            <p class="text-end m-0 mb-1 fst-italic text-primary texto_error">Password cannot be empty</p>
+          </div>
+          <button type="submit" class="btn btn-secondary text-light w-100 text-uppercase py-3">Claim
+            your free trial</button>
+        </form>
+
+        <!-- Terminos y Condiciones -->
+        <p class="m-0 text-success terminos">By clicking the button, you are agreeing to our <scan class="text-primary">
+            Terms and
+            Services</scan>
+        </p>
+      </div>
+    </div>
+
+  </section>
+  <footer class="attribution">
+    Desafío por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Codificado por <a href="https://github.com/DaniloVaron" target="_blank">Danilo Varon</a>.
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
