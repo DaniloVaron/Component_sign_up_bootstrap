@@ -28,16 +28,19 @@ $Azul_oscuro_hover: hsla(249, 10%, 26%, 0.25);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// Con esto se esconde el icono y el texto del error
 .icono_error,
 .texto_error {
   display: none;
 }
 
+// Con esto se muestran el icono y el texto del error
 .entrada.error .icono_error,
 .entrada.error .texto_error {
   display: block;
 }
 
+// Con esto se muestra el borde de error de los inputs
 .entrada.error input {
   border: 2px solid $primary;
 }
@@ -65,6 +68,7 @@ body {
   }
 }
 
+// Titulo principal del proyecto
 .title {
   font-weight: 700;
   font-size: 1.5em;
@@ -76,11 +80,13 @@ body {
   }
 }
 
+// Texto principal
 .texto {
   font-size: 0.8em;
   color: $Azul_grisaceo_claro;
 }
 
+//Inputs del formulario
 .formulario input {
   border-radius: 5px;
   border: 1px solid $success;
@@ -92,6 +98,7 @@ body {
   border: 1.5px solid $danger;
 }
 
+//Oferta y carta del proyecto
 .oferta,
 .card {
   box-shadow: 0px 6px 0px 0px $Azul_oscuro_hover;
@@ -99,6 +106,7 @@ body {
   font-size: 0.8em;
 }
 
+//Boton de la carta
 .btn {
   font-size: 0.9em;
   border-radius: 5px;
@@ -110,11 +118,13 @@ body {
   background: $Verde_hover;
 }
 
+//Terminos y condiciones
 .terminos {
   font-size: 0.7em;
   font-weight: 700;
 }
 
+//Icono de error
 .icono_error {
   width: 17px;
   top: 20%;
